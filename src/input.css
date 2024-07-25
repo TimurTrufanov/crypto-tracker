@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.settings-button {
+    @apply p-1 cursor-pointer hover:fill-purple-900 hover:rotate-45 transition-transform duration-300 outline-none dark:fill-white dark:hover:fill-orange-600;
+}
+
+.settings-menu {
+    @apply absolute right-0 w-56 p-4 bg-white border border-gray-200 rounded-md shadow-lg dark:bg-gray-700 dark:border-black;
+}
+
+.theme-select, .currency-select {
+    @apply text-sm text-right focus:outline-none dark:bg-gray-700 dark:text-white;
+}
+
+.input-coin {
+    @apply mt-2 rounded-2xl w-full px-4 py-2 text-2xl border-2 border-gray-300 text-gray-900 focus:outline-none focus:border-gray-500;
+}
+
+.offered-coins {
+    @apply -mt-4 flex p-2 bg-white rounded-b-2xl shadow-md mb-2 gap-2 overflow-hidden;
+}
+
+.offered-coin {
+    @apply inline-flex items-center mt-4 px-2 rounded-md text-xs font-medium bg-gray-300 text-gray-900 cursor-pointer;
+}
+
+.error_message {
+    @apply ml-2 text-sm text-red-600;
+}
+
+.add-coin {
+    @apply mt-4 py-2 px-8 font-medium rounded-full text-white bg-slate-500 hover:bg-slate-700 transition-colors duration-300 focus:outline-none focus:border-slate-600 focus:ring focus:ring-offset-2 focus:ring-slate-600;
+}
+
+.searched-coins {
+    @apply text-black w-48 text-xl p-1 rounded-lg border border-gray-500 shadow-lg focus:outline-none focus:border-gray-950;
+}
+
+.coins-pagination {
+    @apply flex justify-center;
+}
+
+.coins-previous-page, .coins-page, .coins-next-page{
+    @apply inline-block p-2 bg-white border border-gray-600 font-bold hover:bg-slate-300 outline-none font-mono;
+}
+
+.coins-previous-page {
+    @apply rounded-l-xl;
+}
+
+.coins-next-page {
+    @apply rounded-r-xl;
+}
+
+.coin-cards {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-3;
+}
+
+.coin-card {
+    @apply bg-white overflow-hidden shadow rounded-xl font-semibold;
+}
+
+.coin-values {
+    @apply px-6 py-6 sm:px-4 text-center;
+}
+
+.coin-name {
+    @apply text-gray-500 truncate;
+}
+
+.coin-price {
+    @apply mt-2 text-2xl text-black xl:text-4xl;
+}
+
+.coin-delete {
+    @apply w-full bg-gray-200 p-5 text-lg text-gray-600 border-t border-gray-300 hover:bg-gray-300 outline-none;
+}
